@@ -1,0 +1,399 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #f7f7f7;
+}
+
+.logo {
+    height: 40px;
+    display: flex;
+    align-items: end;
+}
+
+.logo_container {
+    margin-left: 3%;
+}
+
+.action_bar {
+    margin-right: 3%;
+}
+
+.nav_bar {
+    min-width: 515.45px;
+    width: 45%;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav_bar a {
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: .3px;
+    color: #282c3f;
+    font-weight: 700;
+    text-align: center;
+    padding: 31px 0;
+    border-bottom: 3px solid #f7f7f7;
+}
+
+.nav_bar a:hover {
+    border-bottom: 3px solid #f2c210;
+}
+
+.nav_bar a sup {
+    font-weight: 600;
+    text-align: left;
+    color: #ff3f6c;
+}
+
+.search_bar {
+    height: 40px;
+    min-width: 250px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    border: 3px solid #f5f5f8;
+    border-radius: 5px;
+}
+
+.search_icon {
+    box-sizing: content-box;
+    padding: 8px 15px 8px 8px;
+    height: 20px;
+    text-align: center;
+    background: #ffffff;
+    color: #282c3f;
+    font-weight: 100;
+    border-radius: 4px 0px 4px 0px;
+}
+
+.search_input {
+    font-size: 14px;
+    height: 40px;
+    color: #696e79;
+    border: 3px solid #f5f5f8;
+    border-radius: 0 4px 4px 0;
+    border-left: 0;
+    border-right: 0;
+    background: #ffffff;
+    flex-grow: 1;
+}
+
+.action_bar {
+    min-width: 195px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.action_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.action_icon {
+    height: 24px;
+    width: 24px;
+    font-weight: 100;
+    color: #000000;
+}
+
+.action_name {
+    font-size: 13px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.bag-item-count{
+    background-color: #f16565;
+    white-space: nowrap;
+    text-align: center;
+    line-height: 18px;
+    padding: 0 6px;
+    height: 18px;
+    background: #ff3f6c;
+    position: absolute;
+    border-radius: 50%;
+    font-size: 12px;
+    color: #fff;
+    left: 95% ;
+    top: 4px;
+    font-weight: 700;
+}
+
+
+/* Main Section*/
+.banner_container {
+    margin: 20px 0 40px 0;
+}
+
+.banner_image {
+    width: 100%;
+    padding: 0px 60px 0 60px;
+}
+
+.category_heading {
+    text-transform: uppercase;
+    color: #3e4152;
+    letter-spacing: .15em;
+    font-size: 1.8em;
+    margin: 100px 0 100px 30px;
+    max-height: 5em;
+    font-weight: 700;
+}
+
+.category_item, .items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.items-container{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.category_item a {
+    height: 382px;
+    box-sizing: border-box;
+}
+
+.item-container{
+    width: 250px;
+    margin: 10px;
+}
+
+.item-image{
+    width: 100%;
+}
+
+.rating{
+    font-size: 12px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.company_name{
+    margin-top: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    color: #282c3f;
+    margin-bottom: 6px;
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+.item_name{
+    color: #535766;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    min-height: 40px;
+}
+
+.price{
+    font-size: 14px;
+    line-height: 15px;
+    color: #282c3f;
+    white-space: nowrap;
+    margin-top: 10px;
+}
+
+.current-price{
+    font-size: 14px;
+    font-weight: 700;
+    color: #282c3f;
+}
+
+.original-price{
+    text-decoration: line-through;
+    color: #7e818c;
+    font-weight: 400;
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+.discount{
+    color: #ff905a;
+    font-weight: 400;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.btn-add-bag{
+    margin-top: 5px;
+    padding: 12px 15px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: #ff3e6c;
+    border: 1px solid #ff3e6c;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    margin-right: 3%;
+}
+
+.bag-button{
+    margin-right: 5px;
+}
+
+.sale_item {
+    margin-top: 80px;
+    width: 250px;
+}
+
+/*footer*/
+
+.footer_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    box-sizing: content-box;
+    width: 60%;
+    margin-left: 25%;
+    margin-top: 5%;
+    background: #FAFBFC;
+}
+
+.footer_column {
+    display: flex;
+    flex-direction: column;
+    padding-right: 100px;
+    float: left;
+    vertical-align: top;
+}
+
+.footer_content .footer_column h3 {
+    display: flex;
+    justify-content: start;
+    text-decoration: none;
+    color: #282c3f;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: 25px 0;
+}
+
+.footer_content .footer_column a {
+    color: #696b79;
+    display: flex;
+    font-size: 15px;
+    text-decoration: none;
+    padding-bottom: 5px;
+    cursor: pointer;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.app_download img {
+    margin-right: 10px;
+    margin-left: 0;
+    height: 130px;
+    box-sizing: content-box;
+}
+
+.app_download {
+    display: flex;
+    justify-content: center;
+}
+
+footer hr {
+    width: 55%;
+    margin-left: 23%;
+    margin-top: 20px;
+}
+
+.copyright {
+    color: #94969f;
+    margin-left: 40%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.social_media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 24px;
+}
+
+.social {
+    font-size: 25px;
+}
+
+/* Top Up */
+
+.offer_box {
+    background-color: #535766;
+    width: 250px;
+    height: 50px;
+    color: #fff;
+    transform: rotate(270deg);
+    display: flex;
+    justify-content: start;
+    position: fixed;
+    bottom: 320px;
+    left: 90.5%;
+    z-index: 1;
+}
+
+.offer {
+    font-size: 14px;
+    transform: rotate(270deg);
+    z-index: 2;
+    position: fixed;
+    bottom: 350px;
+    left: 92%;
+    font-size: 24px;
+    width: 170px;
+    height: 2px;
+    color: #fcfcfc;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.notification {
+    font-size: 40px;
+    position: fixed;
+    bottom: 184px;
+    left: 96.3%;
+    color: #575366;
+
+    animation: bell_ring 1s ease-in-out infinite;
+}
+
+@keyframes bell_ring {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-10deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
